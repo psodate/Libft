@@ -3,13 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_mem_extra.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 03:17:45 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/14 06:05:20 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/17 00:51:05 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
 #include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)

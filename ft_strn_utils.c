@@ -3,13 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strn_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 03:44:17 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/14 05:43:56 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/17 00:57:19 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
 #include "libft.h"
 
 int ft_strncmp(const char *s1, const char *s2, size_t n)

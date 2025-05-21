@@ -3,13 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_string.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 04:12:19 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/12 22:45:30 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/21 21:58:50 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
 #include "libft.h"
 
 size_t ft_strlen(const char *s)
@@ -79,6 +82,34 @@ char *ft_strrchr(const char *str, int c)
         return (char *)&str[i];
     return last;
 }
+
+char *ft_strjoin(char const *s1, char const *s2)
+{
+    char *result;
+    size_t i;
+    size_t j;
+
+    if (!s1 || !s2)
+        return NULL;
+    result = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+    if (!result)
+        return NULL;
+    i = 0;
+    while (s1[i])
+    {
+        result[i] = s1[i];
+        i++;
+    }
+    j = 0;
+    while (s2[j])
+    {
+        result[i + j] = s2[j];
+        j++;
+    }
+    result[i + j] = '\0';
+    return result;
+}
+
 /*
 int main(void)
 {

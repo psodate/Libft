@@ -3,13 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_convert.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 00:05:17 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/13 02:34:54 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/17 00:51:21 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
 #include "libft.h"
 
 int atoi(const char *nptr)

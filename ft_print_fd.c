@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_fd.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 22:50:36 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/13 00:05:49 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/17 00:51:07 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
+#include "libft.h"
 
 void ft_putchar_fd(char c, int fd)
 {

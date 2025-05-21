@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mathisseguin <mathisseguin@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 05:34:07 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/14 06:05:33 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/17 00:52:31 by mathissegui      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
+#include "libft.h"
 
 static int	count_words(char const *s, char c)
 {
@@ -113,7 +115,7 @@ char **ft_split(char const *s, char c)
 		return NULL;
 	return tab;
 }
-
+/*
 void print_split(char **tab)
 {
     int i;
@@ -158,3 +160,4 @@ int main(void)
 
     return 0;
 }
+*/
