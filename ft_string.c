@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 04:42:00 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 04:42:07 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/23 10:17:50 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,18 +109,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i + j] = '\0';
 	return (result);
 }
-
-/*
-int	main(void)
-{
-	const char	*s = "asjhfjhsfdhjasfgag jhsdagfhj gashdgfhgsafjhsgjhfasg";
-	char		*res;
-
-	res = ft_strrchr(s, 'o');
-	if (res)
-		printf(%s\n", res);
-	else
-		printf("char non trouvé\n");
-	return (0);
-}
-*/
