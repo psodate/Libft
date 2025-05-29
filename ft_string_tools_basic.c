@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_string.c                                        :+:      :+:    :+:   */
+/*   ft_string_tool_basic.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/22 04:42:00 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/23 10:17:50 by mseguin          ###   ########.fr       */
+/*   Created: 2025/05/24 21:59:14 by mseguin           #+#    #+#             */
+/*   Updated: 2025/05/24 22:14:09 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
+// Retourne la longueur d'une chaîne (sans le \0).
 
 char	*ft_strdup(const char *s1)
 {
@@ -45,6 +47,8 @@ char	*ft_strdup(const char *s1)
 	return (copy);
 }
 
+//  Alloue une copie de la chaîne.
+
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
@@ -65,6 +69,8 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
+// Trouve la première occurrence d'un caractère.
+
 char	*ft_strrchr(const char *str, int c)
 {
 	char	*last;
@@ -82,6 +88,8 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (last);
 }
+
+// Trouve la dernière occurrence d'un caractère.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -109,3 +117,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i + j] = '\0';
 	return (result);
 }
+
+//  Concatène deux chaînes.

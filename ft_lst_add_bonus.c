@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 06:47:28 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/23 10:28:17 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:11:07 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+
+// Ajoute un maillon au début.
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -30,3 +32,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last = ft_lstlast(*lst);
 	last->next = new;
 }
+
+// Ajoute un maillon à la fin.

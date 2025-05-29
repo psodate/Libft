@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 03:44:17 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/23 06:01:51 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:06:27 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
+//  Compare deux chaînes jusqu'à n caractères.
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
@@ -54,6 +56,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
+// Cherche une sous-chaîne dans une autre, limitée à n caractères.
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -73,6 +77,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (len);
 }
+
+// Copie une chaîne en respectant une taille max.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -99,3 +105,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[dst_len + j] = '\0';
 	return (dst_len + src_len);
 }
+
+// Concatène deux chaînes dans une taille limite.

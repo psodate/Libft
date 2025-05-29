@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 00:05:17 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 04:48:14 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 21:54:35 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
+
+// Convertit une chaîne en int.
 
 static int	ft_intlen(int n)
 {
@@ -79,3 +81,5 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+//  Convertit un int en chaîne allouée.

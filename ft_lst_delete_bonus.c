@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 07:25:06 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/23 11:19:53 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:12:20 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+
+// Supprime un maillon.
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
@@ -29,3 +31,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		*lst = tmp;
 	}
 }
+
+//  Supprime tous les maillons.

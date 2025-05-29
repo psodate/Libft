@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/13 03:17:45 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 01:55:32 by mseguin          ###   ########.fr       */
+/*   Created: 2025/05/24 21:58:52 by mseguin           #+#    #+#             */
+/*   Updated: 2025/05/24 22:01:01 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+// Copie sécurisée même si les zones se chevauchent.
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t				i;
@@ -58,6 +60,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// Cherche un octet dans un bloc.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -76,3 +80,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// Compare deux zones mémoire.

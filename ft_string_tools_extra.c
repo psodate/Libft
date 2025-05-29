@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_string_tools.c                                  :+:      :+:    :+:   */
+/*   ft_string_tools_extra.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/22 04:42:22 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 04:42:38 by mseguin          ###   ########.fr       */
+/*   Created: 2025/05/24 21:59:03 by mseguin           #+#    #+#             */
+/*   Updated: 2025/05/24 22:09:34 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
+//  Extrait une sous-chaîne.
+
 static int	is_in_set(char c, const char *set)
 {
 	size_t	i;
@@ -74,6 +76,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, start, end - start + 1));
 }
 
+// Supprime les caractères en trop début/fin.
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;
@@ -87,6 +91,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+// Applique une fonction à chaque caractère et renvoie une nouvelle chaîne.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -107,3 +113,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
+
+// Applique une fonction à chaque caractère (modifie directement).

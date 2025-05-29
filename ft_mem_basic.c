@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 03:17:12 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 01:30:18 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 21:55:30 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,14 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
+// Remplit un bloc mémoire avec une valeur.
+
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+
+// Met tous les octets à zéro.
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -54,6 +58,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+// Copie n octets (pas sûr si chevauchement).
+
 void	*ft_calloc(size_t count, size_t size)
 {
 	void		*ptr;
@@ -68,3 +74,5 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, total);
 	return (ptr);
 }
+
+// Alloue et initialise un bloc à zéro.

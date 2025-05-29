@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 22:50:36 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 01:59:53 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:13:31 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+// Écrit un caractère dans un fd.
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -34,6 +36,8 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
+// Écrit une chaîne dans un fd.
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (s == NULL)
@@ -41,6 +45,8 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
+
+// Écrit une chaîne suivie de \n dans un fd.
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -58,3 +64,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
 }
+
+// Écrit un int dans un fd.

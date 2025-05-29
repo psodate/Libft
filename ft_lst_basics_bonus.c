@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_basics_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lst_basics_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 05:30:42 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/23 06:45:02 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:10:42 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ t_list	*ft_lstnew(void *content)
 	return (node);
 }
 
+//  Crée un nouveau maillon.
+
 int	ft_lstsize(t_list *lst)
 {
 	int	count;
@@ -37,6 +39,8 @@ int	ft_lstsize(t_list *lst)
 	return (count);
 }
 
+// Renvoie la taille de la liste.
+
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
@@ -45,3 +49,5 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+
+// Renvoie le dernier maillon.

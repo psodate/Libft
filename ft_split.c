@@ -6,7 +6,7 @@
 /*   By: mseguin <mseguin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 05:34:07 by mseguin           #+#    #+#             */
-/*   Updated: 2025/05/22 03:58:25 by mseguin          ###   ########.fr       */
+/*   Updated: 2025/05/24 22:13:53 by mseguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,49 +111,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (tab);
 }
-/*
-void print_split(char **tab)
-{
-    int i;
 
-    i = 0;
-    if (!tab)
-    {
-        printf("split returned NULL\n");
-        return;
-    }
-    while (tab[i])
-    {
-        printf("tab[%d] = \"%s\"\n", i, tab[i]);
-        i++;
-    }
-    printf("tab[%d] = NULL\n", i);
-}
-
-int main(void)
-{
-    char **res;
-
-    printf("Test 1 : \"bonjour les copains\", sep = ' '\n");
-    res = ft_split("bonjour les copains", ' ');
-    print_split(res);
-    free(res);
-
-    printf("\nTest 2 : \"--hello---world--\", sep = '-'\n");
-    res = ft_split("--hello---world--", '-');
-    print_split(res);
-    free(res);
-
-    printf("\nTest 3 : \"salut\", sep = 'x'\n");
-    res = ft_split("salut", 'x');
-    print_split(res);
-    free(res);
-
-    printf("\nTest 4 : \"\", sep = ','\n");
-    res = ft_split("", ',');
-    print_split(res);
-    free(res);
-
-    return 0;
-}
-*/
+// Sépare une chaîne en tableau de mots selon un délimiteur.
+// Retourne un char ** terminé par NULL.
